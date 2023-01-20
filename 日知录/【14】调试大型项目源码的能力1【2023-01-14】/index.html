@@ -39,7 +39,7 @@
 <meta property="og:title" content="【14】源码学习能力1【2023-01-14】">
 <meta property="og:url" content="https://longguzzz.github.io/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%9014%E3%80%91%E8%B0%83%E8%AF%95%E5%A4%A7%E5%9E%8B%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81%E7%9A%84%E8%83%BD%E5%8A%9B1%E3%80%902023-01-14%E3%80%91/index.html">
 <meta property="og:site_name" content="L空间">
-<meta property="og:description" content="首先要有高质量源码。比如，业界最新工程实践的源码，可能只能在大厂内部看到，而外部看不到，那么也就没法学源码。不过，其实开源项目的代码就很够学了。 visual studio的一些简单配置 先找Tools下的Options 看Microsoft的在线文档，熟悉各种基本功能，比如：在文件中查找 - Visual Studio (Windows) | Microsoft Learn 在Solution">
+<meta property="og:description" content="首先要有高质量源码。比如，业界最新工程实践的源码，可能只能在大厂内部看到，而外部看不到，那么也就没法学源码。不过，其实开源项目的代码就很够学了。 visual studio的一些简单配置  先找Tools下的Options 看Microsoft的在线文档，熟悉各种基本功能，比如：在文件中查找 - Visual Studio (Windows) | Microsoft Learn 在Solution">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-01-13T16:00:00.000Z">
@@ -1636,7 +1636,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.010729f6.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1674059194531),
+    lastupdate: new Date(1674233000745),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2440,36 +2440,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>首先要有高质量源码。比如，业界最新工程实践的源码，可能只能在大厂内部看到，而外部看不到，那么也就没法学源码。不过，其实开源项目的代码就很够学了。</p>
-<div class="story post-story"><h2 id="visual-studio的一些简单配置"><a href="#visual-studio的一些简单配置" class="headerlink" title="visual studio的一些简单配置"></a>visual studio的一些简单配置</h2><ol>
+<div class="story post-story"><h2 id="visual-studio的一些简单配置">visual studio的一些简单配置</h2>
+<ol>
 <li>先找Tools下的Options</li>
 <li>看Microsoft的在线文档，熟悉各种基本功能，比如：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/visualstudio/ide/find-in-files?view=vs-2022">在文件中查找 - Visual Studio (Windows) | Microsoft Learn</a></li>
 <li>在Solution Explorer中追踪正在浏览的文件：<a target="_blank" rel="noopener" href="https://mattferderer.com/show-current-active-file-in-vs-studio-explorer">How to Show the Current Active File in Visual Studio Solution Explorer | Matt Ferderer</a></li>
 <li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ShemeerNS.FilePathOnFooter">File Path On Footer - Visual Studio Marketplace</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.google.com/search?q=visual+studio+%E6%94%BE%E5%A4%A7%E5%AD%97%E4%BD%93&oq=visual+studio+%E6%94%BE%E5%A4%A7&aqs=chrome.1.69i57j0i512j0i8i30i625j0i8i30j0i30i625.7091j0j1&sourceid=chrome&ie=UTF-8">visual studio 放大字体 - Google 搜索</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.google.com/search?q=visual+studio+%E6%94%BE%E5%A4%A7%E5%AD%97%E4%BD%93&amp;oq=visual+studio+%E6%94%BE%E5%A4%A7&amp;aqs=chrome.1.69i57j0i512j0i8i30i625j0i8i30j0i30i625.7091j0j1&amp;sourceid=chrome&amp;ie=UTF-8">visual studio 放大字体 - Google 搜索</a></li>
 <li>一些问题，像是“长字符串打不开viewer”，网上的答案不一定正确。可能就是vs的版本过新，需要往回退一退。</li>
 </ol>
-</div><div class="story post-story"><h2 id="常规项目在windows平台上编译"><a href="#常规项目在windows平台上编译" class="headerlink" title="常规项目在windows平台上编译"></a>常规项目在windows平台上编译</h2><p>C以及C++、编译、链接的基本功得练扎实，而且必须至少是实验驱动的训练方式，只看书是远远不够的。（尤其是各种问题组合起来，如果只看过书而没有练过，难度就会以乘法方式组合飙升。）之后则是熟悉project属性里的各种设置。</p>
+</div><div class="story post-story"><h2 id="常规项目在windows平台上编译">常规项目在windows平台上编译</h2>
+<p>C以及C++、编译、链接的基本功得练扎实，而且必须至少是实验驱动的训练方式，只看书是远远不够的。（尤其是各种问题组合起来，如果只看过书而没有练过，难度就会以乘法方式组合飙升。）之后则是熟悉project属性里的各种设置。</p>
 <ol>
 <li>无比详细的例子：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/585860296">如何在 Visual Studio 编译调试 Windows 版本的 Nginx 源码？ - 知乎</a></li>
-<li>添加过滤器有点小坑，最新版本不一定支持递归地把文件夹添加成过滤器，得一个一个手动加……<ol>
-<li><a target="_blank" rel="noopener" href="https://www.google.com.hk/search?q=visual+studio+add+directory+tree&newwindow=1&sxsrf=AJOqlzUXtvAwARM3hNn0_bGq9ODSTt_cBg:1673652515397&ei=I-nBY6D1F53m4-EPpOWR2AQ&ved=0ahUKEwjgkqG92cX8AhUd8zgGHaRyBEsQ4dUDCA8&uact=5&oq=visual+studio+add+directory+tree&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQHjIECAAQHjoKCAAQRxDWBBCwAzoGCAAQBxAeOgUIABCABDoHCAAQHhDxBDoGCAAQCBAeSgQIQRgASgQIRhgAUIgHWKgbYMYgaAJwAXgAgAF6iAGuBpIBAzAuN5gBAKABAcgBCsABAQ&sclient=gws-wiz-serp">visual studio add directory tree - Google 搜索</a></li>
+<li>添加过滤器有点小坑，最新版本不一定支持递归地把文件夹添加成过滤器，得一个一个手动加……
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.google.com.hk/search?q=visual+studio+add+directory+tree&amp;newwindow=1&amp;sxsrf=AJOqlzUXtvAwARM3hNn0_bGq9ODSTt_cBg%3A1673652515397&amp;ei=I-nBY6D1F53m4-EPpOWR2AQ&amp;ved=0ahUKEwjgkqG92cX8AhUd8zgGHaRyBEsQ4dUDCA8&amp;uact=5&amp;oq=visual+studio+add+directory+tree&amp;gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQHjIECAAQHjoKCAAQRxDWBBCwAzoGCAAQBxAeOgUIABCABDoHCAAQHhDxBDoGCAAQCBAeSgQIQRgASgQIRhgAUIgHWKgbYMYgaAJwAXgAgAF6iAGuBpIBAzAuN5gBAKABAcgBCsABAQ&amp;sclient=gws-wiz-serp">visual studio add directory tree - Google 搜索</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/asdfgh0077/article/details/103642019">如何在Visual Studio中“添加现有项”整个目录结构？_asdfgh0077的博客-CSDN博客_visualstudio 显示根目录内容</a></li>
 </ol>
 </li>
-<li>编译的一些操作<ol>
+<li>编译的一些操作
+<ol>
 <li>熟悉project属性里的各种设置</li>
-<li>熟悉Build菜单下的各种选项，比如<a target="_blank" rel="noopener" href="https://www.google.com/search?q=visual+studio+%E6%B8%85%E9%99%A4%E6%96%87%E4%BB%B6%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91&oq=visual+studio+%E6%B8%85%E9%99%A4%E6%96%87%E4%BB%B6%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91&aqs=chrome..69i57j33i160.13339j0j1&sourceid=chrome&ie=UTF-8">visual studio 清除文件重新编译 - Google 搜索</a>  </li>
+<li>熟悉Build菜单下的各种选项，比如<a target="_blank" rel="noopener" href="https://www.google.com/search?q=visual+studio+%E6%B8%85%E9%99%A4%E6%96%87%E4%BB%B6%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91&amp;oq=visual+studio+%E6%B8%85%E9%99%A4%E6%96%87%E4%BB%B6%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91&amp;aqs=chrome..69i57j33i160.13339j0j1&amp;sourceid=chrome&amp;ie=UTF-8">visual studio 清除文件重新编译 - Google 搜索</a></li>
 <li>一些简单的快捷键，比如ctrl+pause</li>
 </ol>
 </li>
-<li>报错怎么处理<ol>
+<li>报错怎么处理
+<ol>
 <li>先看是否有定义，通过everything搜索源码目录，在vs的工程配置中添加各种文件，或者可以自己写一些脚本。（一些外部的依赖库还需要下载。）</li>
-<li>搜索引擎搜一搜，比如<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/16948064/unresolved-external-symbol-lnk2019">c++ - Unresolved external symbol LNK2019 - Stack Overflow</a>能知道Ws2_32.lib这样的静态库，<a target="_blank" rel="noopener" href="https://github.com/openssl/openssl/issues/1061">Link errors in 1.1 Windows static build: unresolved external symbol __imp_CertOpenStore · Issue #1061 · openssl&#x2F;openssl</a>能知道crypt32.lib。（用everything在电脑上搜一下，其实是Crypt32.lib。）</li>
+<li>搜索引擎搜一搜，比如<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/16948064/unresolved-external-symbol-lnk2019">c++ - Unresolved external symbol LNK2019 - Stack Overflow</a>能知道Ws2_32.lib这样的静态库，<a target="_blank" rel="noopener" href="https://github.com/openssl/openssl/issues/1061">Link errors in 1.1 Windows static build: unresolved external symbol __imp_CertOpenStore · Issue #1061 · openssl/openssl</a>能知道crypt32.lib。（用everything在电脑上搜一下，其实是Crypt32.lib。）</li>
 <li>依旧无法编译通过，就删除，但是删除的时候应该记录删了什么东西。如果模块划分得好，想学的部分作为相对独立的模块其实不一定会受到影响。</li>
 </ol>
 </li>
 </ol>
-</div><div class="story post-story"><h2 id="vs调试"><a href="#vs调试" class="headerlink" title="vs调试"></a>vs调试</h2><ol>
+</div><div class="story post-story"><h2 id="vs调试">vs调试</h2>
+<ol>
 <li>重点在于积累场景。什么场景s应该采用什么思路t去进行什么操作组合ops来探查什么信息info，最好专门开文档积累(s,t,ops,info)。</li>
 <li>Debug窗口一个一个看熟悉。</li>
 </ol>
@@ -2536,18 +2542,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%9015%E3%80%91%E8%87%AA%E4%B8%BB%E6%97%B6%E9%97%B41%E3%80%902023-01-15%E3%80%91/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【15】自主时间1【2023-01-15】</p>
-          <p class='content'>时间幻觉过去一周，主线推进的进度极少。花了大量的时间在研究怎么做笔记、打印各种资料、搜集资料……这类事情上。相对于这些时间，出行时间与参加活动的时间其实只占小头。
-钟表陈述的事实与知觉上所传达的...</p>
+        <a class='prev' href='/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%9014%E3%80%91%E3%80%8AEssentials%20of%20Programming%20Languages%E3%80%8B-%E9%80%92%E5%BD%92%E7%A8%8B%E5%BA%8F%E5%86%99%E6%B3%95%E3%80%902023-01-14%E3%80%91/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【14】《Essentials of Programming Languages》-递归程序写法【2023-01-14】</p>
+          <p class='content'>《Essentials of Programming Languages》
+【1】 Recursively Specified Data
+
+contract and comments，写递归程序...</p>
         </a>
       
       
-        <a class='next' href='/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%9014%E3%80%91%E3%80%8AEssentials%20of%20Programming%20Languages%E3%80%8B-%E9%80%92%E5%BD%92%E7%A8%8B%E5%BA%8F%E5%86%99%E6%B3%95%E3%80%902023-01-14%E3%80%91/'>
-          <p class='title'>【14】《Essentials of Programming Languages》-递归程序写法【2023-01-14】<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>《Essentials of Programming Languages》
-【1】 Recursively Specified Data
-contract and comments，写递归程序时...</p>
+        <a class='next' href='/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%9013%E3%80%91%E6%97%A0%E6%95%88%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%8D%B1%E6%9C%BA6%E3%80%902023-01-13%E3%80%91/'>
+          <p class='title'>【13】无效笔记之危机6【2023-01-13】<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>速度与精加工度的权衡
+
+通过近段时间的试验，发现如果要做极致精细的笔记，阅读速度将会下降到1小时4到5页。这意味着，980页左右的书，可能需要240小时左右才能看完，这个速度极度不合理。
+
+这意...</p>
         </a>
       
     </div>

@@ -39,7 +39,7 @@
 <meta property="og:title" content="【2】观测能力制约认知水平【2023-01-02】">
 <meta property="og:url" content="https://longguzzz.github.io/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%902%E3%80%91%E8%A7%82%E6%B5%8B%E8%83%BD%E5%8A%9B%E5%88%B6%E7%BA%A6%E8%AE%A4%E7%9F%A5%E6%B0%B4%E5%B9%B3%E3%80%902023-01-02%E3%80%91/index.html">
 <meta property="og:site_name" content="L空间">
-<meta property="og:description" content="观测能力如何制约认知水平？调试内核代码有感：对gdb调试掌握不熟练，会极大地阻碍“观测-思考-行动-反馈”循环，在正确性、速度、心理动力等一系列维度阻碍写代码。 仔细一想，“观测-思考-行动-反馈”循环起于观测、回于反馈，而常言中以强调思考和行动者居多。 这重要却模糊的地方，该探索思考 控制理论，可以提供一套更复杂的类比。而且看得见摸得着的物理结构似乎更有可操作性。 eval和apply循环，在环">
+<meta property="og:description" content="观测能力如何制约认知水平？ 调试内核代码有感：对gdb调试掌握不熟练，会极大地阻碍“观测-思考-行动-反馈”循环，在正确性、速度、心理动力等一系列维度阻碍写代码。 仔细一想，“观测-思考-行动-反馈”循环起于观测、回于反馈，而常言中以强调思考和行动者居多。 这重要却模糊的地方，该探索思考  控制理论，可以提供一套更复杂的类比。而且看得见摸得着的物理结构似乎更有可操作性。 eval和apply循环，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-01-01T16:00:00.000Z">
@@ -1636,7 +1636,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.010729f6.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1674059194531),
+    lastupdate: new Date(1674233000745),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2439,15 +2439,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <div class="story post-story"><h2 id="观测能力如何制约认知水平？"><a href="#观测能力如何制约认知水平？" class="headerlink" title="观测能力如何制约认知水平？"></a>观测能力如何制约认知水平？</h2><p>调试内核代码有感：对gdb调试掌握不熟练，会极大地阻碍“观测-思考-行动-反馈”循环，在正确性、速度、心理动力等一系列维度阻碍写代码。</p>
+    <div class="story post-story"><h2 id="观测能力如何制约认知水平？">观测能力如何制约认知水平？</h2>
+<p>调试内核代码有感：对gdb调试掌握不熟练，会极大地阻碍“观测-思考-行动-反馈”循环，在正确性、速度、心理动力等一系列维度阻碍写代码。</p>
 <p>仔细一想，“观测-思考-行动-反馈”循环起于观测、回于反馈，而常言中以强调思考和行动者居多。</p>
-</div><div class="story post-story"><h2 id="这重要却模糊的地方，该探索思考"><a href="#这重要却模糊的地方，该探索思考" class="headerlink" title="这重要却模糊的地方，该探索思考"></a>这重要却模糊的地方，该探索思考</h2><ol>
+</div><div class="story post-story"><h2 id="这重要却模糊的地方，该探索思考">这重要却模糊的地方，该探索思考</h2>
+<ol>
 <li>控制理论，可以提供一套更复杂的类比。而且看得见摸得着的物理结构似乎更有可操作性。</li>
-<li>eval和apply循环，在环境中实现自身的递归定义、自我解释。“观测-思考-行动-反馈”也是在环境里递归构造自我。eval&#x2F;apply构建的解释器多种多样，相比之下，“观测-思考-行动-反馈”的描述则模糊得异常。</li>
+<li>eval和apply循环，在环境中实现自身的递归定义、自我解释。“观测-思考-行动-反馈”也是在环境里递归构造自我。eval/apply构建的解释器多种多样，相比之下，“观测-思考-行动-反馈”的描述则模糊得异常。</li>
 <li>这样的异常，在人生其他维度里还有多少？视而不见，听而不闻，或许是因为无法有意识地识别信息流里的模式。假如有意识地改造，要如何才能改得足够敏锐？</li>
 <li>先用“观测-思考-行动-反馈”循环来改造“观测-思考-行动-反馈”循环。重点方向：写代码、学习方式、关于人的认知。</li>
 </ol>
-<h3 id="改造“观测-思考-行动-反馈”循环的启示"><a href="#改造“观测-思考-行动-反馈”循环的启示" class="headerlink" title="改造“观测-思考-行动-反馈”循环的启示"></a>改造“观测-思考-行动-反馈”循环的启示</h3><p>使用</p>
+<h3 id="改造“观测-思考-行动-反馈”循环的启示">改造“观测-思考-行动-反馈”循环的启示</h3>
+<p>使用</p>
 <ol>
 <li>调研-设计-写码-调试。启示：如果知道可用的工具有哪些，那么在没有发明新工具的情况下，工具的选择与使用能力也是一大要事。</li>
 <li>定理证明。启示：知道不等于理解、不等于会用。即使知道同样的基础操作，并不意味着能想到怎么解决问题。</li>
@@ -2468,7 +2471,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>诈骗的信息流。启示：系统偏差、相互印证、自恰与体系排斥。又想到《语言、真理与逻辑》所言，以及科学共识的变化方式。</li>
 <li>他山之石，可以攻玉。启示：每一种额外的知识储备，在找到沟通点之后，可以成体系地转换出启发思路。</li>
 </ol>
-<h3 id="其他有意思的问题"><a href="#其他有意思的问题" class="headerlink" title="其他有意思的问题"></a>其他有意思的问题</h3><ul>
+<h3 id="其他有意思的问题">其他有意思的问题</h3>
+<ul>
 <li>人如何发现未知的他人？人如何观测他人？有什么观测方法？</li>
 <li>人如何观测自己？有什么观测方法？</li>
 <li>潜在的论域？</li>
@@ -2481,7 +2485,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>是否存在锁死困局？人是否可能意识到自己在何种意义上被锁在了某个困局？如何清醒？</li>
 <li>提问时怎么发现不知道的应该知道之事？行动如何带来变数？事实是以何种方式打破“提问-自己解决”循环的？* 怎么样是一个封闭的运算系统？</li>
 </ul>
-<h3 id="一些行动思路"><a href="#一些行动思路" class="headerlink" title="一些行动思路"></a>一些行动思路</h3><ol>
+<h3 id="一些行动思路">一些行动思路</h3>
+<ol>
 <li>现有的各种学习方法中的信息流以及其间的“观测-思考-行动-反馈”循环，需要系统地改造优化。</li>
 <li>了解行业历史，可能有比想象中更丰富的途径。</li>
 <li>尽早参与多个领域的实际工作，这样才有实际的问题来练手如何解决。从局势创生与变化的角度而言，接触到行业高手或许更容易发现变局中的有效变量、格局运转背后的规则或规律。有空可能还需要看一些管理学的书。</li>
@@ -2553,16 +2558,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <a class='prev' href='/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%903%E3%80%91%E5%8A%A8%E8%BD%A6%E4%B8%8A%E7%9C%8B%E4%B9%A6%E3%80%902023-01-03%E3%80%91/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【3】动车上看书【2023-01-03】</p>
           <p class='content'>看书
+
 看书用实体书，字大，任何地方都方便看，也便于笔记。
 建立全局脉络，9合1打印更合适。首看与再看是不同的过程，首看时要字大，再看时要大缓存，方便快速回忆。
-封闭于动车上，无他事，看书反而更快...</p>
+封闭于动车上，无他事，看书反而更...</p>
         </a>
       
       
         <a class='next' href='/%E6%97%A5%E7%9F%A5%E5%BD%95/%E3%80%901%E3%80%91%E5%85%94%E5%B9%B4%E5%BC%80%E5%90%AF%E4%BF%AE%E8%A1%8C%E3%80%902023-01-01%E3%80%91/'>
           <p class='title'>【1】兔年开启修行【2023-01-01】<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>日知录一年半了，时间无情，已是2023。2023是兔年，联系一下现实，恰如龟兔赛跑。
-兔子的第一弱点：无法理解乌龟究竟在什么层面、什么意义上更快。这是观察能力在一整个维度上的缺失。糟糕的是，缺失...</p>
+          <p class='content'>日知录
+一年半了，时间无情，已是2023。2023是兔年，联系一下现实，恰如龟兔赛跑。
+兔子的第一弱点：无法理解乌龟究竟在什么层面、什么意义上更快。这是观察能力在一整个维度上的缺失。糟糕的是，缺...</p>
         </a>
       
     </div>
